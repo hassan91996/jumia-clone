@@ -1,0 +1,210 @@
+.CheckoutElement {
+    margin-bottom: 10px;
+    height: 150px;
+    background-color: white;
+}
+
+.CheckoutElement .Desktopcontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CheckoutElement .Desktopcontainer> img {
+    height: 100%;
+    width: 120px;
+}
+
+.CheckoutElement .Detailes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 350px;
+    padding-top: 10px;
+    word-break: break-all;
+}
+
+.CheckoutElement .actions {
+    display: flex;
+}
+
+.CheckoutElement .actions span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: 14px;
+    color: #ffa500;
+    cursor: pointer;
+}
+
+.actions span .Icon {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+
+.CheckoutElement .amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    border-right: 1px solid #ededed;
+
+}
+
+.CheckoutElement .amount span {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.amount .controlIcon {
+    cursor: pointer;
+}
+
+.amount .disablecontrolIcon {
+    color: #ededed;
+    pointer-events: none;
+}
+
+.CheckoutElement .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    border-right: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+}
+
+.price span {
+    color: rgb(14, 231, 14);
+    font-size: 12px;
+}
+
+.price del {
+    font-size: 12px;
+}
+
+.CheckoutElement .totalPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+.CheckoutElement .totalPrice p {
+    font-size: 20px;
+    color: #ffa500;
+}
+
+.CheckoutElement .noStock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px
+}
+
+.noStock>div {
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: gray;
+    border-radius: 5px;
+}
+
+.CheckoutElement .ResponsiveContainer {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.CheckoutElement .ResponsiveContainer .ProductInfo {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    word-break: break-all;
+
+}
+.ProductInfo >img{
+    min-width: 120px;
+    max-width: 120px;
+    height: 100%;
+}
+
+.ProductInfo .Data {
+    padding: 5px;
+}
+
+
+.ProductInfo .offer {
+    position: absolute;
+    top: 5px;
+    right: 70px;
+    z-index: 3;
+    width: 35px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #feefde;
+    border-radius: 2px;
+    color: #f68b1e;
+    margin: 0 10px;
+}
+
+.ProductInfo .offer span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.ProductInfo .Data>p {
+    max-height: 45px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.ProductInfo .Data .Resprice {
+    display: flex;
+    padding: 5px 0;
+}
+
+
+.ResponsiveContainer .ProductBottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.ProductBottom .amount {
+    height: 100%;
+    border-right: none;
+}
+.ProductBottom .Nostock{
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    color: #a5a0a0;
+}
+
+@media (max-width:600px) {
+    .CheckoutElement {
+        width: 100%;
+    }
+
+    .CheckoutElement .Desktopcontainer {
+        display: none;
+    }
+
+    .CheckoutElement .ResponsiveContainer {
+        display: flex;
+    }
+
+}

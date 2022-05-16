@@ -1,0 +1,54 @@
+.Order {
+    margin: 10px 5px;
+    padding: 5px;
+    border-radius: 3px;
+    -webkit-box-shadow: -1px 1px 9px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: -1px 1px 9px -1px rgba(0, 0, 0, 0.15);
+}
+
+.Order .mainTable {
+    width: 890px;
+    border: 1px solid #ededed;
+    border-spacing: 0;
+    text-align: center;
+    word-break: break-all;
+    border-collapse: collapse;
+}
+
+.Order .mainTable th, td {
+    border: 1px solid #ededed;
+}
+
+.Order .mainTable>tr>th {
+    border: 1px solid #ededed;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.Order .mainTable .productsTableHeader {
+    width: 600px;
+}
+
+.Order .mainTable .productsTable {
+    width: 100%;
+    height: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.productsTable th {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.Order .mainTable .productsTable .nameHeader {
+    width: 60%;
+}
+
+@media (max-width:600px) {
+    .Order {
+        overflow: auto;
+        width: 100%;
+    }
+}

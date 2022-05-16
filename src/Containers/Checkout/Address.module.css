@@ -1,0 +1,36 @@
+.PerosonInfo{
+    background-color: white;
+    padding: 10px;
+}
+.PerosonInfo .header{
+    display: flex;
+    padding: 5px 0;
+    border-bottom: .2px solid #cdcdcd;
+}
+.PerosonInfo .header p {
+    margin-right: 10px;
+}
+
+.PerosonInfo .formContanier{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.PerosonInfo .formContanier .form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     margin: 5px 10px;
+}
+.PerosonInfo .formContanier button{
+    width: 90%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+}
+

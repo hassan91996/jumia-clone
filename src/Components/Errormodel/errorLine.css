@@ -1,0 +1,7 @@
+.errorline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    width: 100%;
+}

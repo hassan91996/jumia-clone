@@ -1,0 +1,26 @@
+.Logo{
+width: 100px;
+height: 80%;
+margin: 0 1px;
+
+}
+
+.Logo img{
+    width:100%;
+    height: 100%;
+}
+.moblie{
+   display: none;
+}
+
+@media(max-width:600px){
+    .Logo{
+    width: 60px;
+    }
+    .desktop{
+        display: none;
+    }
+    .moblie{
+        display:inline-block ;
+    }
+   }

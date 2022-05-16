@@ -1,0 +1,13 @@
+.checkFilter{
+    padding: 10px;
+    border-top: 1px solid #ededed;
+
+}
+
+.checkFilter .ckeckelements{
+    overflow: auto;
+    max-height: 150px;
+    padding: 5px;
+
+}
+

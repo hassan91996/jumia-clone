@@ -1,0 +1,51 @@
+ .chexkboxcontainer {
+    position: relative;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+  } 
+
+  .chexkboxcontainer label{
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    
+    
+}
+.chexkboxcontainer input {
+  top: 13px;
+  right: 12px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.chexkboxcontainer label .Iconcontaninerr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+   display: flex;
+   align-items: center;
+   margin-left: 10px;
+   padding: 0;
+   }
+ .chexkboxcontainer label:hover .Iconcontaninerr::before{
+  top: -8px;
+  right: -8px;
+  content: "";
+  position: absolute;
+  width: 40px;  
+   height: 40px;
+   background-color: #feefde;
+   opacity: .7;
+   border-radius: 50%;
+   z-index: 1;
+
+ }

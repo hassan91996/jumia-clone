@@ -1,0 +1,144 @@
+.RateProducts {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.rateproduct {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+}
+
+.rateproduct .productData {
+    display: flex;
+}
+
+.productData>img {
+    height: 100%;
+    width: 150px;
+
+}
+
+.rateproduct .Detailes {
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.rateproduct .Detailes>span {
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.rateproduct .actions {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    min-width: 100px
+}
+
+.rateproduct .actions>button {
+    width: 100px;
+    font-size: 16px;
+}
+
+.rateModal {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 10px;
+}
+
+.rateModal .stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.rateModal span {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.rateModal textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bebdbd;
+    margin: 10px 0;
+    resize: none;
+    font-size: 16px;
+}
+
+.rateModal button {
+    font-size: 16px;
+}
+
+.emptyRates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.emptyRates {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+
+}
+
+.emptyRates h4 {
+    font-size: 18px;
+}
+
+.emptyRates a {
+    padding: 10px 30px;
+    margin-top: 20px;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-box-shadow: -1px 1px 9px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: -1px 1px 9px -1px rgba(0, 0, 0, 0.15);
+
+}
+
+@media (max-width:600px) {
+
+    .RateProducts {
+        padding: 10px 5px;
+    }
+
+    .rateproduct {
+        width: 100%;
+    }
+
+    .productData>img {
+        width: 120px;
+    }
+
+    .rateproduct .actions {
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+
+    .rateModal {
+        width: 300px;
+    }
+
+}

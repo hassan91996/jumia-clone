@@ -1,0 +1,70 @@
+.Categories {
+    width: 190px;
+    background-color: white;
+    color: #282828;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+
+.Categories a {
+    color: #282828;
+    display: block;
+    font-size: 14px;
+}
+
+.Categories a:hover {
+    color: orange;
+}
+
+.Categories>ul>li>a {
+    padding: 7px 10px;
+
+}
+
+
+.Categories .subCatrgories {
+    position: absolute;
+    right: 190px;
+    top: 0;
+    width: calc(1200px - 190px);
+    height: 100%;
+    background-color: white;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+
+
+.subcategory {
+    display: flex;
+    flex-direction: column;
+    margin:0 0 5px 15px ;
+    width: 32%;
+
+}
+
+.subcategory a {
+    color: #999;
+    padding: 3px 0;
+    font-size: 12px;
+}
+
+.subcategory span a {
+    color: #000;
+    padding: 3px 0;
+    font-weight: 500;
+    margin: 3px 0;
+    border-bottom: 1px solid rgb(212, 204, 204);
+}
+
+@media (max-width: 600px) {
+    .Categories {
+        display: none;
+    }
+}

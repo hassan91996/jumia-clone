@@ -1,0 +1,17 @@
+.Content {
+    width: 1200px;
+    margin: 65px auto 5px;
+}
+
+
+@media(max-width:600px) {
+    .Content {
+        width: 100%;
+    }
+}
+
+@media (min-width:600px) {
+    .Content {
+        min-height: calc(100vh - 600px);
+    }
+}

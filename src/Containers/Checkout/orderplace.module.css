@@ -1,0 +1,22 @@
+.orderplaceInfo{
+    background-color: white;
+    padding: 10px;
+}
+.orderplaceInfo .header{
+    display: flex;
+    padding: 5px 0;
+    border-bottom: .2px solid #cdcdcd;
+}
+.orderplaceInfo .header p {
+    margin-right: 10px;
+}
+.orderplaceInfo .orderplaceForm{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.orderplaceInfo button{
+    width: 90%;
+    margin: 5px auto;
+    font-size: 16px;
+}

@@ -1,0 +1,27 @@
+.Userorders>p{
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: .5px solid #ededed;
+    font-weight: 500;
+}
+.Userorders .ordersHeader{
+    padding: 10px;
+    border-bottom: .5px solid #ededed;
+}
+.Userorders .ordersHeader span{
+    padding: 10px;
+    color: #5e5d5d;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+.Userorders .ordersHeader .active{
+    border-bottom: 1px solid orange;
+    color: orange;
+}
+/* @media (max-width:600px) {
+    .allorders{
+        overflow: auto;
+    }
+} */

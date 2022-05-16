@@ -1,0 +1,26 @@
+.Model{
+    background-color: white;
+    position: fixed;
+    margin: auto;
+    top:50%;
+    left: 50%;
+    z-index: 200;
+    padding: 20px;
+    transform: translate(-50%,-50%)
+
+}
+.Model .clear{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+@media (max-width:600px){
+    .Model{
+     padding: 5px;
+    }
+}
+

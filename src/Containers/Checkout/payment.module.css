@@ -1,0 +1,19 @@
+.paymentInfo{
+    background-color: white;
+    padding: 10px;
+}
+.paymentInfo .header{
+    display: flex;
+    padding: 5px 0;
+    border-bottom: .2px solid #cdcdcd;
+}
+.paymentInfo .header p {
+    margin-right: 10px;
+}
+.paymentInfo .paymentForm{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+

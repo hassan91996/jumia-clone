@@ -1,0 +1,19 @@
+.Home{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Home .topcontainer{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ position: relative;
+}
+
+@media (max-width: 600px) {
+  .Home .topcontainer{
+        flex-direction: column;
+  }
+}

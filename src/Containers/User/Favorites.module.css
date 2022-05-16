@@ -1,0 +1,39 @@
+.Favorites >p{
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: .5px solid #ededed;
+    font-weight: 500;
+
+}
+
+.Favorites .FavProducts{
+    padding: 10px;
+}
+
+.Favorites .emptyliked{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+    background-color: #fff;
+
+}
+
+.emptyliked h4{
+    font-size: 18px;
+}
+.emptyliked a{
+    padding: 10px 30px;
+    margin-top: 20px;
+    color: white;
+    background-color:orange;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-box-shadow: -1px 1px 9px -1px rgba(0,0,0,0.15); 
+    box-shadow: -1px 1px 9px -1px rgba(0,0,0,0.15);
+
+}

@@ -1,0 +1,176 @@
+.CategoryProduct {
+    margin: 5px 5px 5px;
+    width: 210px;
+    height: 400px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 3px;
+
+}
+
+.CategoryProduct .productData {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+.CategoryProduct .productData img {
+    width: 100%;
+    height: 60%;
+    cursor: pointer;
+
+}
+
+.CategoryProduct .productData .description {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 40%;
+
+}
+
+.CategoryProduct .productData .description .descriptioneData {
+    cursor: pointer;
+    height: 100%;
+
+}
+
+.CategoryProduct .productData .description .descriptioneData p {
+    font-size: 14px;
+    word-break: break-all;
+    max-height: 40px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.productData .description h5 {
+    font-size: 16px;
+    font-weight: bold;
+
+
+}
+
+.description .offerArea {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #9c9c9c;
+}
+
+.description .offer {
+    z-index: 3;
+    width: 35px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #feefde;
+    border-radius: 2px;
+    color: #f68b1e;
+    margin: 0 10px;
+
+}
+
+.description .offer span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.description .rateArea {
+    display: flex;
+    margin: 5px 0;
+}
+
+.description .rateArea>span {
+    font-size: 14px;
+    color: #9c9c9c;
+    margin: 0 10px;
+}
+
+.CategoryProduct:hover {
+    -webkit-box-shadow: -1px 1px 9px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: -1px 1px 9px -1px rgba(0, 0, 0, 0.15);
+
+}
+
+.CategoryProduct .productData .description .ResponsiveAdd {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.CategoryProduct:hover .AddtocartArea {
+    opacity: 1;
+}
+
+.CategoryProduct .AddtocartArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    padding: 10px;
+    opacity: 0;
+}
+
+.CategoryProduct .AddtocartArea p,
+.description .ResponsiveAdd p {
+    display: none;
+}
+
+.CategoryProduct .opacity {
+    opacity: 1;
+}
+
+@media (max-width:600px) {
+    .CategoryProduct {
+        -webkit-box-shadow: -1px 1px 9px -1px rgba(0, 0, 0, 0.15);
+        box-shadow: -1px 1px 9px -1px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        height: 160px;
+
+    }
+
+    .CategoryProduct .productData {
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .CategoryProduct .productData img {
+        width: 150px;
+        height: 100%;
+    }
+
+    .CategoryProduct .productData .description {
+        padding: 5px;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .CategoryProduct .productData .description .descriptioneData p {
+        margin: 0;
+    }
+
+    .description .rateArea {
+        margin: 0;
+    }
+
+    .CategoryProduct .productData .description .ResponsiveAdd {
+        display: flex;
+    }
+
+    .CategoryProduct .AddtocartArea {
+        display: none;
+    }
+}

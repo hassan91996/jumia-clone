@@ -1,0 +1,159 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px 10px;
+}
+
+.Input {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+    width: 90%;
+    background-color: white;
+}
+
+.invalid {
+    border: 1px solid red
+}
+
+.Input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.Input textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px #fff inset !important;
+    -webkit-text-fill-color: #000;
+}
+
+.Input .select {
+    direction: ltr;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.Iconcontaniner {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+
+
+}
+
+.Iconcontaniner:hover::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(238, 234, 234);
+    border-radius: 50%;
+
+}
+
+.container .error {
+    width: 90%;
+    text-align: right;
+    color: red;
+    font-size: 14px;
+
+}
+
+.lable {
+    width: 90%;
+    text-align: right;
+    font-size: 16px;
+
+}
+
+
+
+/* .container{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: 10px 5px  ;
+width: 90%;    
+
+}
+
+.Input{
+box-sizing: border-box;
+padding: 10px 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+border:  1px solid rgb(235, 235, 235);
+border-radius: 5px;
+width: 100%;    
+}
+.invalid{
+    border:  1px solid red
+}
+.Input .input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+  
+}
+.Input .textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    font-size: 16px;
+  
+}
+.Input .select{
+    direction: ltr;
+    border:none;
+    outline:none;
+    width: 100%;
+    font-size: 16px;
+    
+}
+.Iconcontaniner{
+ margin:0 5px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ cursor: pointer;
+
+
+}
+.error{
+    width: 100%;
+    text-align: right;
+    color: red;
+    font-size: 14px;
+ 
+}  */

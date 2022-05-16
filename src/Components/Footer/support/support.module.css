@@ -1,0 +1,135 @@
+.Support{
+    width: 100%;
+    background-color: #282828;
+    margin-top: 5px;
+
+
+}
+.Support .Container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    margin: auto;
+}
+
+.Support .imgContainer{
+    flex: 1;
+}
+.Support .imgContainer img{
+    flex: 1;
+}
+
+.Support .Middle{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding:  0px 5px;
+   
+} 
+
+.Support .Middle span{
+   color: #c7c7cd;
+   font-size: 12px;
+   margin: 10px 0px;
+}
+
+.Support .Mail{
+    display: flex;
+}
+.Support .InputContainer{
+    border:1px solid lightgray;
+    width: 60%;
+    height: 30px;
+    display:  flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 3px;
+}
+.Support .InputContainer input{
+    border: none;
+    flex: 8;
+    padding-left: 20px;
+    outline: none;
+}
+.Support .Icon{
+ color: rgb(185, 185, 185);
+margin: 5px;
+}
+
+.Support .Mail button{
+    border: none;
+    color: white;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color:transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.Support .Mail button:hover{
+    color: orange;
+    border: 1px solid orange;
+}
+
+.Support .AppContainer{
+flex: 1;
+display: flex;
+color: white;
+}
+
+.Support .AppContainer img{
+    width:40px;
+    height:40px;
+    border-radius: 3px;
+    margin-left:10px ;
+   
+}
+
+.Support .AppContainer span{
+    color: #c7c7cd;
+    font-size: 12px;
+   
+ }
+
+@media(max-width:600px){
+    .Support .Container{
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .Support .Middle{
+        width: 100%;
+        flex-direction: column;
+        padding:  20px  0px;
+       
+    } 
+    .Support .InputContainer{
+        width: 100%;
+    }
+    .Support .Mail{
+        justify-content: space-between;
+    } 
+    .AppContainer{
+       padding: 10px 0;
+    }
+    
+    .AppContainer img{
+        width:40px;
+        height:40px;
+        border-radius: 3px;
+        margin-left:10px ;
+       
+    }
+    
+    .AppContainer span{
+        color: #c7c7cd;
+        font-size: 12px;
+       
+     }
+}

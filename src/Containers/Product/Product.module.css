@@ -1,0 +1,371 @@
+.ProductContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+.ProductContainer .productDetails {
+    display: flex;
+    background-color: white;
+    width: 100%;
+
+}
+
+.productDetails .ProductImagesContainer {
+    height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.productDetails hr {
+    margin: 10px 5px;
+    border-top: .1px solid #eee;
+}
+
+.ProductImagesContainer .share {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.productDetails .ProductInfo {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+
+}
+
+.ProductInfo .ProdTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.ProdTitle>h3 {
+    max-width: 700px;
+    font-size: 20px;
+    word-wrap: break-word;
+
+}
+
+.ProdTitle .like {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: orange;
+    position: relative;
+
+}
+
+.like:hover::before {
+    top: -8px;
+    right: -5px;
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #feefde;
+    opacity: .7;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.ProductInfo .priceArea {
+    padding: 10px 0;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    margin: 5px 0;
+}
+
+.ProductInfo .priceArea h1 {
+    padding: 10px 0;
+}
+
+.priceArea .offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    height: 25px;
+    background-color: #feefde;
+    opacity: 1;
+    border-radius: 2px;
+    color: #f68b1e;
+    margin: 0 10px;
+
+}
+
+.priceArea .offer span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ProductInfo .similer, .ProductInfo .sizes {
+    padding: 5px 0;
+    font-weight: 500;
+    border-bottom: 1px solid #ededed;
+
+}
+
+.ProductInfo .similer>p, .ProductInfo .sizes>p {
+    margin-bottom: 5px
+}
+
+.ProductInfo .sizesContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ProductInfo .similer img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin: 0 1px;
+
+}
+
+.ProductInfo .sizes .size {
+    display: inline-block;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #ededed;
+    margin: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.ProductInfo .sizes .emptysize {
+    display: inline-block;
+    color: #ededed;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #ededed;
+    margin: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.ProductInfo .sizes .emptysize::after {
+    content: "";
+    border-top: 1px solid #ededed;
+    width: 90%;
+    position: absolute;
+    right: 4px;
+    top: 16px;
+    transform: rotate(165deg);
+}
+
+.ProductInfo .sizes .size:hover {
+    border: 1px solid rgb(199, 191, 191);
+
+}
+
+.ProductInfo .similer img:hover {
+    border: 1px solid #ededed;
+}
+
+.ProductInfo>div:nth-last-child(2) {
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.productDetails .ProductGallary {
+    padding: 5px;
+    width: 800px;
+    height: 800px;
+}
+
+.productDetails .ProductGallary img:first-child {
+    cursor: default;
+
+}
+
+.ProductContainer .productReviews {
+    background-color: white;
+    margin-top: 5px;
+}
+
+.productReviews h3 {
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+}
+
+.ProductContainer .productReviews .ReviewsComment {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+
+}
+
+.ProductContainer .productReviews>div h4 {
+    padding: 10px 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ProductContainer .productReviews .ratingArea {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.ratingArea .rateingHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.rateingHeader>h1 {
+    color: orange;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 44px;
+
+}
+
+.rateingHeader>p {
+    padding: 5px;
+}
+
+.ratingArea .Reviewsvalues {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Reviewsvalues .rateLine {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Reviewsvalues .rateLine .groupInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rateLine .single {
+    margin: 10px 0;
+    height: 10px;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    width: 130px
+}
+
+.rateLine .single>div {
+    background-color: orange;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+
+.ProductContainer .productReviews .commentArea {
+    flex: 4;
+    padding: 0 10px;
+}
+
+.noReviews {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.comments>div:nth-child(1) {
+    border-top: none;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ededed;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.comment p {
+    word-break: break-all;
+    padding: 10px 0;
+}
+
+@media (max-width:600px) {
+    .ProductContainer {
+        padding: 0;
+    }
+
+    .ProductContainer .productDetails {
+        flex-direction: column-reverse;
+    }
+
+    .productDetails .ProductImagesContainer {
+        height: 500px;
+        width: 100%;
+    }
+
+    .productDetails hr {
+        margin: 5px;
+        border-top: .1px solid #eee;
+    }
+
+    .ProductImagesContainer .share {
+        height: 60px;
+    }
+
+    .productDetails .ProductInfo {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .ProdTitle>h3 {
+        max-width: 90%;
+        font-size: 18px;
+        word-wrap: break-word;
+
+    }
+
+    .like:hover::before {
+        width: 0;
+        height: 0;
+    }
+
+    .ProductInfo .priceArea {
+        padding: 5px 0;
+    }
+
+    .ProductInfo .priceArea h1 {
+        font-size: 25px;
+    }
+
+    .ProductInfo .similer, .ProductInfo .sizes {
+        width: 100%;
+    }
+
+    .ProductContainer .productReviews .ReviewsComment {
+        flex-direction: column;
+    }
+
+}
